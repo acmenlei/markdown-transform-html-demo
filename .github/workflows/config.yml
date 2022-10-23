@@ -1,0 +1,35 @@
+name: Github Actions Build and Deploy Demo
+
+on:
+
+push:
+
+branches:
+
+- master
+
+jobs:
+
+build-and-deploy:
+
+runs-on: ubuntu-lastest
+
+steps:
+
+- name: Checkout
+
+uses: actions/checkout@master
+
+- name: Build and Deploy
+
+uses: JamesIves/github-pages-deploy-action-action@master
+
+env:
+
+ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
+BRAHCN: gh-pages
+
+FOLDER: dist
+
+BUILD_SCRIPT: npm install && npm run build
