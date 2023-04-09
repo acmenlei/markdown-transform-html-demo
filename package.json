@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "markdown-transform-html": "^1.5.9",
+    "markdown-transform-html": "^1.6.0",
     "vue": "^3.2.37"
   },
   "devDependencies": {
