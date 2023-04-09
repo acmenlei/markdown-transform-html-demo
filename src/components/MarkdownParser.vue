@@ -1,23 +1,22 @@
 <script setup lang='ts'>
-import { markdownToHTML } from "markdown-transform-html"
 import "markdown-transform-html/lib/styles/index.css"
-import "markdown-transform-html/lib/highlight/dark.css"
-import { ref, watchEffect } from "vue";
+import { markdownToHTML, reHighlight } from 'markdown-transform-html'
+import { onMounted, ref, watchEffect } from "vue";
 
 const props = defineProps<{ content: string }>();
-const html = ref("");
+const container = ref();
 
-watchEffect(() => {
-  html.value = markdownToHTML(props.content, { highlight: true, lineNumber: true })
-
+onMounted(() => {
+  watchEffect(() => {
+    container.value.innerHTML = markdownToHTML(props.content, { highlight: true, lineNumber: true, xss: false })
+    reHighlight();
+  })
 })
 
 </script>
 
 <template>
-  <div class="markdown-transform-html" v-html="html"></div>
+  <div class="markdown-transform-html" ref="container"></div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

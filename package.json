@@ -9,10 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "markdown-transform-html": "^1.5.4",
+    "markdown-transform-html": "^1.5.9",
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@types/prismjs": "^1.26.0",
     "@vitejs/plugin-vue": "^3.1.0",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
