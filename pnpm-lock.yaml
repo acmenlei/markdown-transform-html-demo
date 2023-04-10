@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   markdown-transform-html:
-    specifier: ^1.6.0
-    version: 1.6.0(prismjs@1.29.0)
+    specifier: ^1.6.4
+    version: 1.6.4(prismjs@1.29.0)
   vue:
     specifier: ^3.2.37
     version: 3.2.40
@@ -457,8 +457,8 @@ packages:
     dependencies:
       sourcemap-codec: 1.4.8
 
-  /markdown-transform-html@1.6.0(prismjs@1.29.0):
-    resolution: {integrity: sha512-a0FqlvxLyM35eIOuDakoNsj5D2VvaxgbWVv5fYEl9iZKcvzpOpvOqWwTM0lTN7cpoRL1HkOU0LBYPQJMogO2KA==}
+  /markdown-transform-html@1.6.4(prismjs@1.29.0):
+    resolution: {integrity: sha512-GsFit7HQDAyLV2w64QeA8VfVuhDI4xSkorSzU20DOfWZWWzDVxA/nId8H6Sl3MMRaU0CRucBQkNcweqUufh4wA==}
     peerDependencies:
       prismjs: ^1.29.0
     dependencies:

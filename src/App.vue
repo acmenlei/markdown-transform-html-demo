@@ -2,7 +2,8 @@
 import { ref } from 'vue';
 import MarkdonwParser from './components/MarkdownParser.vue'
 
-const defaultMd = `### 1. Javascript Parser 
+const defaultMd = `
+### 1. Javascript Parser 
 The default theme is dark, and you can change the styles in the styles section to suit your preferences
 \`\`\`js
 const anthor = "coderlei";
@@ -52,7 +53,7 @@ export default {
 [百度一下](https://baidu.com)
 
 ### 7. render image
-![图片](https://img0.baidu.com/it/u=4218735100,1707585667&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1664557200&t=7c59d07048bab5fa72df1be136c9aba9)
+![图片](https://avatars.githubusercontent.com/u/54731221?v=4)
 
 ### 8. render italic
 *斜体*
